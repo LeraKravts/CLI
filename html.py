@@ -1,5 +1,4 @@
 text = '''
-<!DOCTYPE html>
 <html>
 <head>
 <title>Tomato Timer</title>
