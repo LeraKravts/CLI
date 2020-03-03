@@ -1,6 +1,7 @@
 import argparse
-from html import text
+
 from lxml import html
+from html import text
 
 
 def cli_parser(document: str):
