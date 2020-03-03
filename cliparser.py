@@ -14,4 +14,8 @@ def cli_parser(document: str):
         return tree[0].text_content()
     except IndexError:
         print('IndexError')
+        
+print(cli_parser(text))     
+        
+        
 
