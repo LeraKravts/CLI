@@ -1,15 +1,14 @@
 import argparse
 
 from lxml import html
-from html import text
 
 
-def cli_parser():
+def cli_parser(document: str):
     parser = argparse.ArgumentParser()
     parser.add_argument('--xpath', default='//*', help='a part of html page')
     args = parser.parse_args()
-    path = args.xpath
-
-    source_code = html.fromstring(text)
-    tree = source_code.xpath(path)
-    return tree[0].text_content()
+   
+    source_code = html.fromstring(document)
+    tree = source_code.xpath(args.xpath)
+    
+    return print(tree[0].text_content())
