@@ -1,6 +1,7 @@
+import argparse
+
 from lxml import html
 from html import text
-import argparse
 
 
 def cli_parser():
@@ -11,4 +12,4 @@ def cli_parser():
 
     source_code = html.fromstring(text)
     tree = source_code.xpath(path)
-    return print(tree[0].text_content())
+    return tree[0].text_content()
