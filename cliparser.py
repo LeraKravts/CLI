@@ -1,5 +1,5 @@
 import argparse
-
+from html import text
 from lxml import html
 
 
