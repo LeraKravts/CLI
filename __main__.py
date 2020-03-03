@@ -1,5 +1,5 @@
-from html_parser import html_parsing
+from cliparser import cli_parser
+from html import text
 
 if __name__ == '__main__':
-    html_parsing()
-
+    result = cli_parser(document=text)
