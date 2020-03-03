@@ -11,4 +11,4 @@ def cli_parser(document: str):
     source_code = html.fromstring(document)
     tree = source_code.xpath(args.xpath)
     
-    return print(tree[0].text_content())
+    return tree[0].text_content()
