@@ -12,6 +12,3 @@ def cli_parser():
     source_code = html.fromstring(text)
     tree = source_code.xpath(path)
     return print(tree[0].text_content())
-
-
-cli_parser()
